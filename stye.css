@@ -1,0 +1,96 @@
+/* ✅ Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌐 Default Navbar (Desktop first) */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(90, 49, 79); /* 👈 Fixed color */
+    padding: 10px 20px;
+}
+
+.child {
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(235, 53, 183);
+}
+
+.child2 {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 10px;   /* 👈 margin fix */
+    color: black;
+    font-size: medium;
+}
+
+/* 📱 Small screen (up to 600px) */
+@media (max-width:600px) {
+   .parent {
+        flex-direction: column;
+   }
+   .child {
+        font-style: italic;
+        color: white;
+        padding: 10px;
+   }
+   .child2 {
+        flex-direction: column;
+        align-items: center;
+   }
+   a {
+        font-size: large;
+        padding: 8px;
+        margin: 3px 0;
+        color: white;
+   }
+}
+
+/* 📱 Tablet View (601px–992px) */
+@media (max-width: 992px) and (min-width:601px) {
+    .parent {
+        flex-direction: column;
+    }
+    .child {
+        font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+    .child2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+    a {
+        font-size: medium;
+        margin: 8px;
+    }
+}
+
+/* 💻 Large Screens (992px and up) */
+@media (min-width:992px) {
+    body {
+        background-color: lightpink;
+    }
+    .parent {
+        flex-direction: row;   /* 👈 Desktop me hamesha row hi rahega */
+    }
+    .child {
+        font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+    }
+    .child2 {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
+/* small */
+/* table */
+/* lap */
